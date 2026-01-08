@@ -1,0 +1,72 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/Plant2_4.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/WINDOW_WindowFrame_4.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/20mx6floor.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/20mx2x3wall.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/DOOR_DoorFrame_4.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/DOOR_GarageDoorFrame.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/2mWoodFence.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/Signs_NoSmoking.tscn" id="8"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/Vent1Covered_2.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/Plant1_4.tscn" id="10"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/GroundCover_1.tscn" id="11"]
+
+[node name="Set1" type="Spatial"]
+
+[node name="Set1" type="Spatial" parent="."]
+
+[node name="20mx2x3wall" parent="Set1" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+skeleton = NodePath("")
+
+[node name="20mx2x3wall3" parent="Set1" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+skeleton = NodePath("")
+
+[node name="20mx2x3wall2" parent="Set1" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -2 )
+skeleton = NodePath("")
+
+[node name="20mx2x3wall4" parent="Set1" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 2 )
+skeleton = NodePath("")
+
+[node name="20mx6floor" parent="Set1" instance=ExtResource( 3 )]
+skeleton = NodePath("")
+
+[node name="2mWoodFence" parent="Set1" instance=ExtResource( 7 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -7.63781, 0, 0.0768703 )
+skeleton = NodePath("")
+
+[node name="DOOR_DoorFrame_4" parent="Set1" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.97369, 0, -0.899999 )
+skeleton = NodePath("")
+
+[node name="DOOR_GarageDoorFrame" parent="Set1" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.49751, 0, -0.899999 )
+skeleton = NodePath("")
+
+[node name="GroundCover_1" parent="Set1" instance=ExtResource( 11 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -7.07493, -0.0008974, -0.485976 )
+skeleton = NodePath("")
+
+[node name="Plant1_4" parent="Set1" instance=ExtResource( 10 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -7.55815, 0.0222773, 0.46109 )
+skeleton = NodePath("")
+
+[node name="Plant2_4" parent="Set1" instance=ExtResource( 1 )]
+transform = Transform( -0.117664, 0, 0.993053, 0, 1, 0, -0.993053, 0, -0.117664, -7.47917, -0.0240721, 0.67293 )
+skeleton = NodePath("")
+
+[node name="Signs_NoSmoking" parent="Set1" instance=ExtResource( 8 )]
+transform = Transform( 0, 0, 0.731908, 0, 0.731908, 0, -0.731908, 0, 0, -7.58507, 1.84022, 0.246073 )
+skeleton = NodePath("")
+
+[node name="Vent1Covered_2" parent="Set1" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.82265, 2.55468, -1.21431 )
+skeleton = NodePath("")
+
+[node name="WINDOW_WindowFrame_4" parent="Set1" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.86383, 4.10519, -0.957794 )
+skeleton = NodePath("")

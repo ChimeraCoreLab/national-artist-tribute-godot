@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ciqadpnnkx0yk"
+path="res://.godot/imported/โหมโรงเย็น [oRkoUSmeWgA].mp3-68a78ee184724754f1d645f8efd98873.mp3str"
+
+[deps]
+
+source_file="res://โหมโรงเย็น [oRkoUSmeWgA].mp3"
+dest_files=["res://.godot/imported/โหมโรงเย็น [oRkoUSmeWgA].mp3-68a78ee184724754f1d645f8efd98873.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

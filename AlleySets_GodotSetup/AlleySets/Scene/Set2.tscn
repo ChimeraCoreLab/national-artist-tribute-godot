@@ -1,0 +1,171 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://AlleySets/Scene/Pieces/Vent1Covered_1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://AlleySets/Scene/Pieces/WINDOW_WindowFrame_2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://AlleySets/Scene/Pieces/Vent1Covered_3.tscn" type="PackedScene" id=3]
+[ext_resource path="res://AlleySets/Scene/Pieces/20mx2x3wall.tscn" type="PackedScene" id=4]
+[ext_resource path="res://AlleySets/Scene/Pieces/9x9x3_InnerLWalls_1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://AlleySets/Scene/Pieces/Pipe_1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://AlleySets/Scene/Pieces/DOOR_GarageDoorFrame.tscn" type="PackedScene" id=7]
+[ext_resource path="res://AlleySets/Scene/Pieces/9x9x3_InnerLWall_2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://AlleySets/Scene/Pieces/GroundCover_2.tscn" type="PackedScene" id=9]
+[ext_resource path="res://AlleySets/Scene/Pieces/20x13_TRoad.tscn" type="PackedScene" id=10]
+[ext_resource path="res://AlleySets/Scene/Pieces/2mWoodFence.tscn" type="PackedScene" id=11]
+[ext_resource path="res://AlleySets/Scene/Pieces/Pipe_3.tscn" type="PackedScene" id=12]
+[ext_resource path="res://AlleySets/Scene/Pieces/Plant1_4.tscn" type="PackedScene" id=13]
+[ext_resource path="res://AlleySets/Scene/Pieces/DOOR_DoorFrame_2.tscn" type="PackedScene" id=14]
+[ext_resource path="res://AlleySets/Scene/Pieces/DOOR_DoorFrame_3.tscn" type="PackedScene" id=15]
+
+[node name="Set2" type="Spatial"]
+
+[node name="Set2" type="Spatial" parent="."]
+
+[node name="20mx2x3wall" parent="Set2" instance=ExtResource( 4 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, 2, 0, 0 )
+skeleton = NodePath("")
+
+[node name="9x9x3_InnerLWalls_1" parent="Set2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2 )
+skeleton = NodePath("")
+
+[node name="20mx2x3wall2" parent="Set2" instance=ExtResource( 4 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, 2, 3, 0 )
+skeleton = NodePath("")
+
+[node name="9x9x3_InnerLWall_2" parent="Set2" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2 )
+skeleton = NodePath("")
+
+[node name="9x9x3_InnerLWalls_2" parent="Set2" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, 2 )
+skeleton = NodePath("")
+
+[node name="9x9x3_InnerLWall_3" parent="Set2" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, -2 )
+skeleton = NodePath("")
+
+[node name="20x13_TRoad" parent="Set2" instance=ExtResource( 10 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0 )
+skeleton = NodePath("")
+
+[node name="2mWoodFence" parent="Set2" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0892482, 0, -2.55655 )
+skeleton = NodePath("")
+
+[node name="2mWoodFence2" parent="Set2" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0203633, 0, 9.4264 )
+skeleton = NodePath("")
+
+[node name="2mWoodFence3" parent="Set2" instance=ExtResource( 11 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -9.45877, 0, 1.49769 )
+skeleton = NodePath("")
+
+[node name="2mWoodFence4" parent="Set2" instance=ExtResource( 11 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -1.52847, 0, 1.32241 )
+skeleton = NodePath("")
+
+[node name="DOOR_DoorFrame_2" parent="Set2" instance=ExtResource( 14 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, 0.900001, 0, -0.653916 )
+skeleton = NodePath("")
+
+[node name="DOOR_DoorFrame_3" parent="Set2" instance=ExtResource( 15 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -0.899998, 0, 7.70386 )
+skeleton = NodePath("")
+
+[node name="DOOR_GarageDoorFrame" parent="Set2" instance=ExtResource( 7 )]
+transform = Transform( 0, 0, -1, 0, 1, 0, 1, 0, 0, 0.899999, 0, -7.95725 )
+skeleton = NodePath("")
+
+[node name="GroundCover_2" parent="Set2" instance=ExtResource( 9 )]
+transform = Transform( -1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, -0.404188, 0, 8.83527 )
+skeleton = NodePath("")
+
+[node name="Pipe_1" parent="Set2" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.795238, 0.130645, -2.30044 )
+skeleton = NodePath("")
+
+[node name="Pipe_3" parent="Set2" instance=ExtResource( 12 )]
+transform = Transform( 3.57628e-07, -1, 0, 1, 3.57628e-07, 0, 0, 0, 1, -0.795238, 0.130645, -3.13961 )
+skeleton = NodePath("")
+
+[node name="Plant1_4" parent="Set2" instance=ExtResource( 13 )]
+transform = Transform( 0.9108, 0, -0.412848, 0, 1, 0, 0.412848, 0, 0.9108, -0.885384, 0.0477451, 9.12286 )
+skeleton = NodePath("")
+
+[node name="Plant1_5" parent="Set2" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.661179, -0.0173886, 8.47251 )
+skeleton = NodePath("")
+
+[node name="Plant1_6" parent="Set2" instance=ExtResource( 13 )]
+transform = Transform( 0.942605, 0, -0.333909, 0, 1, 0, 0.333909, 0, 0.942605, -0.0604596, -0.0195842, 8.47251 )
+skeleton = NodePath("")
+
+[node name="Plant1_7" parent="Set2" instance=ExtResource( 13 )]
+transform = Transform( -0.130899, 0, -0.991396, 0, 1, 0, 0.991396, 0, -0.130899, 0.194006, -0.0420994, 8.88833 )
+skeleton = NodePath("")
+
+[node name="Plant1_8" parent="Set2" instance=ExtResource( 13 )]
+transform = Transform( 0.867548, 0.150899, -0.473909, -0.107521, 0.987233, 0.117518, 0.485592, -0.0509978, 0.872697, -9.44445, 0.0117162, 0.764807 )
+skeleton = NodePath("")
+
+[node name="Plant1_9" parent="Set2" instance=ExtResource( 13 )]
+transform = Transform( -0.981084, -0.043046, -0.188737, -0.0232996, 0.994133, -0.105621, 0.192176, -0.0992255, -0.976331, -6.41756, 0.0381256, 0.992971 )
+skeleton = NodePath("")
+
+[node name="Plant1_10" parent="Set2" instance=ExtResource( 13 )]
+transform = Transform( 0.904958, 0.0350266, 0.13005, -0.048844, 0.908652, 0.0951539, -0.125515, -0.10106, 0.900623, -7.09794, 0.0381256, 0.992971 )
+skeleton = NodePath("")
+
+[node name="Plant1_11" parent="Set2" instance=ExtResource( 13 )]
+transform = Transform( -0.981084, -0.043046, -0.188737, -0.0232996, 0.994133, -0.105621, 0.192176, -0.0992255, -0.976331, -5.32244, 0.0381256, 0.992971 )
+skeleton = NodePath("")
+
+[node name="Plant1_12" parent="Set2" instance=ExtResource( 13 )]
+transform = Transform( 0.904958, 0.0350266, 0.13005, -0.048844, 0.908652, 0.0951539, -0.125515, -0.10106, 0.900623, -6.00282, 0.0381256, 0.992971 )
+skeleton = NodePath("")
+
+[node name="Vent1Covered_1" parent="Set2" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0, -1, 0, 1, 0, -5.74737, 5, -0.649384 )
+skeleton = NodePath("")
+
+[node name="VentCover_2" parent="Set2/Vent1Covered_1" index="1"]
+visible = false
+
+[node name="Vent1Covered_2" parent="Set2" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0, -1, 0, 1, 0, -5.74737, 3, -0.649384 )
+skeleton = NodePath("")
+
+[node name="Vent1Covered_1001" parent="Set2/Vent1Covered_2" index="0"]
+skeleton = NodePath("../../Vent1Covered_2")
+
+[node name="VentCover_2" parent="Set2/Vent1Covered_2" index="1"]
+visible = false
+skeleton = NodePath("../../Vent1Covered_2")
+
+[node name="Vent1Covered_3" parent="Set2" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0, -1, 0, 1, 0, -5.74737, 1, -0.649384 )
+skeleton = NodePath("")
+
+[node name="Vent1Covered_1001" parent="Set2/Vent1Covered_3" index="0"]
+skeleton = NodePath("../../Vent1Covered_3")
+
+[node name="VentCover_2" parent="Set2/Vent1Covered_3" index="1"]
+visible = false
+skeleton = NodePath("../../Vent1Covered_3")
+
+[node name="Vent1Covered_4" parent="Set2" instance=ExtResource( 3 )]
+transform = Transform( -1, -1.94707e-07, -1.94707e-07, 1.94707e-07, 0, -1, 1.94707e-07, -1, 0, -5.74737, 6.64939, -0.649385 )
+skeleton = NodePath("")
+
+[node name="VentCover_4" parent="Set2/Vent1Covered_4" index="0"]
+visible = false
+skeleton = NodePath("../../Vent1Covered_4")
+
+[node name="WINDOW_WindowFrame_2" parent="Set2" instance=ExtResource( 2 )]
+transform = Transform( 0, 0, -1, 0, 1, 0, 1, 0, 0, 0.957794, 4.57009, 0.0211048 )
+skeleton = NodePath("")
+
+[editable path="Set2/Vent1Covered_1"]
+[editable path="Set2/Vent1Covered_2"]
+[editable path="Set2/Vent1Covered_3"]
+[editable path="Set2/Vent1Covered_4"]

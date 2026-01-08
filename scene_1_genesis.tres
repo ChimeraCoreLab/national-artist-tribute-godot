@@ -1,0 +1,21 @@
+[gd_resource type="Environment" load_steps=4 format=3 uid="uid://6rt4mwwxyado"]
+
+[ext_resource type="Texture2D" uid="uid://c32sy7ifxb1qf" path="res://morn.jpg" id="1_hn1qd"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_07srs"]
+sky_top_color = Color(0.9019608, 0.49411765, 0.13333334, 1)
+sky_horizon_color = Color(0.5568628, 0.26666668, 0.6784314, 1)
+sky_cover = ExtResource("1_hn1qd")
+sun_curve = 0.08889699
+
+[sub_resource type="Sky" id="Sky_gckps"]
+sky_material = SubResource("ProceduralSkyMaterial_07srs")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_gckps")
+sky_rotation = Vector3(0, 0.0034906585, 0)
+tonemap_exposure = 0.4
+glow_enabled = true
+glow_intensity = 0.6
+glow_blend_mode = 0

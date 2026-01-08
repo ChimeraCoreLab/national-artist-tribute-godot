@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://AlleySets/GLTF/Atlas.material" type="Material" id=1]
+[ext_resource path="res://AlleySets/Material/AlleyAtlas.tres" type="Material" id=2]
+
+[sub_resource type="ArrayMesh" id=77]
+resource_name = "AlleySetPieces_Plane013"
+surfaces/0 = {
+"aabb": AABB( -0.0712597, -2.26416e-08, 3.72529e-09, 0.152891, 0.455495, 1e-05 ),
+"array_data": PoolByteArray( 149, 240, 145, 189, 69, 53, 233, 62, 0, 0, 128, 49, 0, 126, 126, 193, 130, 59, 129, 58, 157, 240, 145, 189, 126, 125, 194, 178, 0, 0, 128, 49, 0, 126, 126, 193, 130, 59, 224, 59, 27, 46, 167, 61, 69, 53, 233, 62, 0, 0, 128, 49, 0, 126, 126, 193, 0, 60, 129, 58, 17, 46, 167, 61, 232, 56, 49, 178, 0, 0, 128, 49, 0, 126, 126, 193, 0, 60, 224, 59 ),
+"array_index_data": PoolByteArray( 3, 0, 0, 0, 2, 0, 3, 0, 1, 0, 0, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 6,
+"material": ExtResource( 1 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 4
+}
+
+[node name="Plant1_1" type="MeshInstance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.53131 )
+mesh = SubResource( 77 )
+material/0 = ExtResource( 2 )

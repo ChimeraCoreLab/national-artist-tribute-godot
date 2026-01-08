@@ -1,0 +1,127 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/Vent1Cover.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/Plant2_4.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/Signs_Danger.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/DOOR_GarageDoorFrame.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/WINDOW_WindowFrame_3.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/PipeCover.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/WINDOW_WindowFrame_2.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/DOOR_DoorFrame_2.tscn" id="8"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/9x9x3_InnerLWall_2.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/13x13_LRoad_2.tscn" id="10"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/DOOR_DoorFrame_3.tscn" id="11"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/2mWoodFence.tscn" id="12"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/Signs_NoSmoking.tscn" id="13"]
+[ext_resource type="PackedScene" path="res://AlleySets_GodotSetup/AlleySets/Scene/Pieces/13x13x3_OuterLWall_2.tscn" id="14"]
+
+[node name="Set4" type="Spatial"]
+
+[node name="Set4" type="Spatial" parent="."]
+
+[node name="9x9x3_InnerLWall_2" parent="Set4" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2 )
+skeleton = NodePath("")
+
+[node name="13x13x3_OuterLWall_2" parent="Set4" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2 )
+skeleton = NodePath("")
+
+[node name="9x9x3_InnerLWall_3" parent="Set4" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, -2 )
+skeleton = NodePath("")
+
+[node name="13x13x3_OuterLWall_3" parent="Set4" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3, 2 )
+skeleton = NodePath("")
+
+[node name="13x13_LRoad_2" parent="Set4" instance=ExtResource( 10 )]
+skeleton = NodePath("")
+
+[node name="2mWoodFence" parent="Set4" instance=ExtResource( 12 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -9.75162, 0, 0.894243 )
+skeleton = NodePath("")
+
+[node name="2mWoodFence2" parent="Set4" instance=ExtResource( 12 )]
+transform = Transform( -1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, 1.47363, 0, -5.92096 )
+skeleton = NodePath("")
+
+[node name="DOOR_DoorFrame_3" parent="Set4" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.79023, 0, -0.899999 )
+skeleton = NodePath("")
+
+[node name="DOOR_DoorFrame_4" parent="Set4" instance=ExtResource( 11 )]
+transform = Transform( -1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, -4.81805, 0, 0.89999 )
+skeleton = NodePath("")
+
+[node name="DOOR_GarageDoorFrame" parent="Set4" instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, -7.1083, 0, 0.899995 )
+skeleton = NodePath("")
+
+[node name="DOOR_GarageDoorFrame2" parent="Set4" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.47077, 0, -0.899997 )
+skeleton = NodePath("")
+
+[node name="PipeCover2" parent="Set4" instance=ExtResource( 6 )]
+transform = Transform( 2.22151, 0, 0, 0, 2.22151, 0, 0, 0, 2.22151, -7.44999, 2.38479, -0.975751 )
+skeleton = NodePath("")
+
+[node name="PipeCover" parent="Set4" instance=ExtResource( 6 )]
+transform = Transform( 2.22151, 0, 0, 0, 2.22151, 0, 0, 0, 2.22151, -9.01501, 2.38479, -0.975751 )
+skeleton = NodePath("")
+
+[node name="Plant2_7" parent="Set4" instance=ExtResource( 2 )]
+transform = Transform( 0, -0.0476409, 0.859966, 1.60427e-09, 0.859966, 0.0476409, -0.861284, 1.60427e-09, 0, 1.00264, 0, 0.246539 )
+skeleton = NodePath("")
+
+[node name="Plant2_6" parent="Set4" instance=ExtResource( 2 )]
+transform = Transform( 0, -0.0553138, 0.998469, 0, 0.998469, 0.0553138, -1, 0, 0, 1.00264, 0, 0.761614 )
+skeleton = NodePath("")
+
+[node name="Plant2_5" parent="Set4" instance=ExtResource( 2 )]
+transform = Transform( -0.768214, -1.89864e-08, -4.82808e-07, 1.89864e-08, 0.765841, -0.0603266, 4.82808e-07, -0.0603266, -0.765841, 0.201641, 0, 1.00386 )
+skeleton = NodePath("")
+
+[node name="Plant2_4" parent="Set4" instance=ExtResource( 2 )]
+transform = Transform( -1, -2.4715e-08, -6.28481e-07, 2.4715e-08, 0.996912, -0.0785284, 6.28481e-07, -0.0785284, -0.996912, 0.645409, 0, 1.00386 )
+skeleton = NodePath("")
+
+[node name="Plant2_8" parent="Set4" instance=ExtResource( 2 )]
+transform = Transform( -1, -2.4715e-08, -6.28481e-07, 2.4715e-08, 0.996912, -0.0785284, 6.28481e-07, -0.0785284, -0.996912, 0.645409, 0, 1.00386 )
+skeleton = NodePath("")
+
+[node name="Signs_Danger" parent="Set4" instance=ExtResource( 3 )]
+transform = Transform( 0.999452, -0.00906562, 0.031836, 0.0325663, 0.0970193, -0.99475, 0.00592931, 0.995241, 0.0972614, 0.358334, 0.0545809, -0.093544 )
+skeleton = NodePath("")
+
+[node name="Signs_NoSmoking3" parent="Set4" instance=ExtResource( 13 )]
+transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, -0.999996, 2.08131, -1.64538 )
+skeleton = NodePath("")
+
+[node name="Signs_NoSmoking2" parent="Set4" instance=ExtResource( 13 )]
+transform = Transform( -1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, -0.745663, 2.08131, 0.99999 )
+skeleton = NodePath("")
+
+[node name="Signs_NoSmoking" parent="Set4" instance=ExtResource( 13 )]
+transform = Transform( 5.36442e-07, 0, -1, 0, 1, 0, 1, 0, 5.36442e-07, 1, 2.08131, -0.323969 )
+skeleton = NodePath("")
+
+[node name="Vent1Cover" parent="Set4" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0, -1, 0, 1, 0, 0.356644, 0, 0.507895 )
+skeleton = NodePath("")
+
+[node name="WINDOW_WindowFrame_2" parent="Set4" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4311, 4.53505, -0.957792 )
+skeleton = NodePath("")
+
+[node name="WINDOW_WindowFrame_3" parent="Set4" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.63956, 4.53505, -0.957792 )
+skeleton = NodePath("")
+
+[node name="WINDOW_WindowFrame_4" parent="Set4" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, -2.4311, 4.53505, 0.957789 )
+skeleton = NodePath("")
+
+[node name="WINDOW_WindowFrame_5" parent="Set4" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, -7.63956, 4.53505, 0.957789 )
+skeleton = NodePath("")

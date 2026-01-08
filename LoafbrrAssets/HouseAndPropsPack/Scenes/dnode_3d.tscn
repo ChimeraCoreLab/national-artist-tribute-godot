@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://do8upbtjx0l11"]
+
+[ext_resource type="PackedScene" uid="uid://dvb1dv3duuevd" path="res://AlleySets_GodotSetup/AlleySets/GLTF/Set1.gltf" id="1_s60hg"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Set1" parent="." instance=ExtResource("1_s60hg")]

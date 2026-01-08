@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://qgmuqk0hk61g"]
+
+[sub_resource type="Environment" id="Environment_ljmo2"]
+background_mode = 1
+glow_enabled = true
+glow_intensity = 0.5
+
+[node name="LegacyScene" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ljmo2")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 5, 0)
+light_color = Color(1, 0.972549, 0.90588236, 1)
+light_energy = 1.8
+shadow_enabled = true
+spot_range = 15.0
+spot_angle = 30.0
